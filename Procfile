@@ -1,0 +1,1 @@
+web: ./build/install/control/bin/control
