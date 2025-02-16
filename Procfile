@@ -1,1 +1,1 @@
-web: ./build/install/control/bin/control
+web: src/main/control
