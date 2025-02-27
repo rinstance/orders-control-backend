@@ -1,4 +1,6 @@
 
+import org.gradle.jvm.tasks.Jar
+
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
@@ -38,3 +40,20 @@ dependencies {
 tasks.create("stage") {
     dependsOn("installDist")
 }
+
+//val fatJar = task("fatJar", type = Jar::class) {
+//    baseName = "${project.name}-fat"
+//    // manifest Main-Class attribute is optional.
+//    // (Used only to provide default main class for executable jar)
+//    manifest {
+//        attributes["Main-Class"] = "example.HelloWorldKt" // fully qualified class name of default main class
+//    }
+//    from(configurations.runtime.map({ if (it.isDirectory) it else zipTree(it) }))
+//    with(tasks["jar"] as CopySpec)
+//}
+
+//tasks {
+//    "build" {
+//        dependsOn(fatJar)
+//    }
+//}
