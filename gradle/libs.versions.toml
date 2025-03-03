@@ -2,7 +2,7 @@
 [versions]
 exposed-version = "0.58.0"
 h2-version = "2.3.232"
-kotlin-version = "1.8.0"
+kotlin-version = "2.1.0"
 ktor-version = "3.0.3"
 logback-version = "1.4.14"
 

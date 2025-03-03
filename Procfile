@@ -1,1 +1,1 @@
-web: build/install/control/bin/control
+web: build/libs/control-0.0.1.jar
